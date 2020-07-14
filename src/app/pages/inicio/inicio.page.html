@@ -1,0 +1,103 @@
+<ion-app>
+  <ion-menu side="start" content-id="main-content">
+
+
+<ion-header>
+  <ion-toolbar>
+
+
+    <ion-title>inicio</ion-title>
+
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item>
+      <ion-icon name="mail" slot="start"></ion-icon>
+      <ion-label>Inbox</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-icon name="paper-plane" slot="start"></ion-icon>
+      <ion-label>Outbox</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-icon name="heart" slot="start"></ion-icon>
+      <ion-label>Favorites</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-icon name="archive" slot="start"></ion-icon>
+      <ion-label>Archived</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-icon name="trash" slot="start"></ion-icon>
+      <ion-label>Trash</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-icon name="warning" slot="start"></ion-icon>
+      <ion-label>Spam</ion-label>
+    </ion-item>
+  </ion-list>
+</ion-content>
+</ion-menu>
+
+<div class="ion-page" id="main-content">
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Inbox</ion-title>
+  </ion-toolbar>
+</ion-header>
+<!-- <ion-content class="ion-padding">
+  <ion-button expand="block" onclick="openMenu()">Open Menu</ion-button>
+</ion-content> -->
+</div>
+</ion-app>
+
+<ion-content class="auth-form">
+
+  <ion-card class="welcome-card">
+    <img src="/assets/cesta.jpg" alt=""/>
+    <ion-card-header>
+      <ion-card-subtitle>Olá!</ion-card-subtitle>
+      <ion-card-title>Bem vindo ao Cultive</ion-card-title>
+    </ion-card-header>
+    
+  </ion-card>
+
+  <ion-list lines="none">
+
+    <ion-grid>
+      <ion-row>
+        <ion-col align-self-center>
+          <ion-button [routerLink]="['/registration']" expand="block" color="primary">Cadastrar</ion-button>
+  
+          <span class="divider line one-line">ou</span>
+  
+          <span class="already">Já tem cadastro?</span>
+  
+          <ion-button [routerLink]="['/login']" expand="block" color="success">Entre</ion-button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  
+<!-- <ion-button>Entrar</ion-button>
+<ion-button>Cadastrar</ion-button> -->
+
+</ion-list>
+
+
+
+</ion-content>
+
+
+
+<!-- Footer without a border 
+<ion-footer class="ion-bar-balanced">
+  <ion-toolbar>
+    <ion-title>Footer - No Border</ion-title>
+  </ion-toolbar>
+</ion-footer>  --> 
+
